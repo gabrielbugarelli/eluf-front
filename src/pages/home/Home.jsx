@@ -9,15 +9,15 @@ import Item from '../../components/Item/Item'
 
 const Home = () => {
   const [item, setItem] = useState([
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', descrition:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', descrition:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', descrition:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', descrition:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', descrition:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', descrition:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', descrition:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', descrition:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', descrition:'Muito gostoso'},
+    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso e quentinho para o consumo Muito gostoso e quentinho para o consumo Muito gostoso e quentinho para o consumo para o consumo Muito gostoso e quentinho para o consumo Muito gostoso e quentinho para o consumo gostoso e quentinho para o consumo'},
+    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
+    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
+    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
+    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
+    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
+    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
+    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
+    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
   ]);
   return (
     <Layout>

@@ -2,14 +2,20 @@
 
 
 // components
-import {Container, ImageItem, TitleItem} from './s_item'
+import {Container, ImageItem, TitleItem, DescriptionItem, ContainerItem, PriceItem, HeaderItem} from './s_item'
 
 
 const Item = ({data}) => {
   return (
     <Container>
       <ImageItem src={data.image}/>
-      <TitleItem>{data.name}</TitleItem>
+      <ContainerItem>
+        <HeaderItem>
+          <TitleItem>{data.name}</TitleItem>
+          <PriceItem>R$ {data.price}</PriceItem>
+        </HeaderItem>
+        <DescriptionItem>{data.description}</DescriptionItem>
+      </ContainerItem>
     </Container>
   );
 }

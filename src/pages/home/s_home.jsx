@@ -1,7 +1,6 @@
 import tw from 'tailwind-styled-components'
 
 export const ContextHome = tw.div`
-  bg-red-300
   w-full
   pr-8
   pl-8
@@ -17,8 +16,8 @@ export const ImageHome = tw.img`
 export const BackgroundImage = tw.div`
   bg-black
   rounded-b-xl
-  max-h-60
   relative
+  
 
   // md
   md:hidden
@@ -58,7 +57,6 @@ export const ContainerItem = tw.div`
   gap-3
   mb-24
   mt-3
-  bg-yellow-300
   
   // md
   

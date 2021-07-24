@@ -17,3 +17,10 @@ export const Context = tw.div`
   
 `;
 
+export const LastWord = tw.div`
+  flex
+  min-h-full
+  bg-red-700
+  mb-5
+  
+`;
