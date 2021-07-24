@@ -24,7 +24,7 @@ const Item = ({data}) => {
         </ContainerItem>
       </Container>
       {active &&
-          <ModalHome data={data}/> 
+          <ModalHome data={data} state={active} setState={setActive}/> 
       }
     </> 
   );

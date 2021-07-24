@@ -2,11 +2,11 @@
 import {useState} from 'react'
 
 // components
-import { Container, ContainerModal, ImageModal, ContextModal, HeaderModal, TitleModal, DescriptionModal, CouterModal, ButtonModal } from "./s-modalhome";
+import { Container, ContainerModal, ImageModal, ContextModal, HeaderModal, TitleModal, DescriptionModal, CouterModal, ButtonModal, ContainerImageModal} from "./s-modalhome";
 
 import {AiOutlinePlus, AiOutlineMinus, AiOutlineClose}from "react-icons/ai";
 
-const ModalHome = ({data}) => {
+const ModalHome = ({data, state, setState}) => {
   const [couter, setCouter] = useState(0);
 
   const hadleMoreCouter = () =>(
@@ -17,28 +17,37 @@ const ModalHome = ({data}) => {
       setCouter(couter-1)
     }
   }
+
+  const handleClose = () =>(
+    setState(!state)
+    
+  )
     return (
       <Container>
       <ContainerModal>
         <ImageModal src={data.image}/>
-        <AiOutlineClose style={{display:'flex', position:'absolute', top:'0', fontSize:''}}/>
+        <ContainerImageModal onClick={handleClose}>
+          <AiOutlineClose />
+        </ContainerImageModal>
 
         <ContextModal>
           <HeaderModal>
             <TitleModal>{data.name}</TitleModal>
+            <DescriptionModal>
+              {data.description}
+            </DescriptionModal>
           </HeaderModal>
-          <DescriptionModal>
-            {data.description}
-          </DescriptionModal>
-          <CouterModal>
-            <AiOutlinePlus style={{color:'black'}}
-              onClick={hadleMoreCouter} />
-              {couter}
-            <AiOutlineMinus style={{color:'black'}}
-              onClick={handleLessCouter}
-            />
-          </CouterModal>
-          <ButtonModal>Add</ButtonModal>
+          
+            <CouterModal>
+              <AiOutlineMinus style={{color:'black'}}
+                onClick={handleLessCouter}
+              />
+                {couter}
+              <AiOutlinePlus style={{color:'black'}}
+                onClick={hadleMoreCouter} />
+            </CouterModal>
+            <ButtonModal>Add</ButtonModal>
+          
         </ContextModal>
       </ContainerModal>
     </Container>

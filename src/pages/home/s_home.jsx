@@ -5,6 +5,8 @@ export const ContextHome = tw.div`
   pr-8
   pl-8
   pt-2
+  transition-all
+  duration-1000
 `;
 
 export const ImageHome = tw.img`
@@ -12,6 +14,7 @@ export const ImageHome = tw.img`
   w-full
   h-full
   opacity-60
+  mt-0
 `;
 export const BackgroundImage = tw.div`
   bg-black
@@ -57,6 +60,7 @@ export const ContainerItem = tw.div`
   gap-3
   mb-24
   mt-3
+  
   
   // md
   md:grid-cols-2

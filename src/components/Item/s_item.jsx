@@ -17,7 +17,7 @@ export const Container = tw.div`
   md:justify-center
   md:pl-2
   md:max-w-full
-  md:relative
+  
 
   // lg
   
