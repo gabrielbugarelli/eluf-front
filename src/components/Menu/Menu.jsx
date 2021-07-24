@@ -27,7 +27,7 @@ const Menu = () => {
           <AiFillHome style={{fontSize:'30px', color:'white'}}/>
         </ContainerIcon>
       </Link>
-      <Link to='/map'>
+      <Link to='/localization'>
         <ContainerIcon>
           <AiTwotoneEnvironment style={{fontSize:'30px', color:'white'}}/>
         </ContainerIcon>
