@@ -17,6 +17,7 @@ justify-around
 md:flex
 md:left-0
 md:w-16
+md:h-full
 md:min-h-screen
 md:flex-col
 md:justify-center
@@ -43,6 +44,3 @@ export const ContainerIcon = tw.div`
   
 `;
 
-export const NameIcon = tw.p`
-  text-white
-`;

@@ -9,6 +9,11 @@ export const Container = tw.div`
 
 export const Context = tw.div`
   flex
-  flex-1
+  flex-col
+  mb-20
+
+  // md
+  md:ml-16
+  md:mb-0
   
 `;
