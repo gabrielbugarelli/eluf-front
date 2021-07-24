@@ -12,7 +12,7 @@ const Home = () => {
       <BackgroundImage>
         <ImageHome src={Imagem} />
         <ContainerTitleImagem>
-          <p style={{color:'#10B981'}}>Economic</p> Lunch Food
+        <p style={{color:'#10B981'}}>E</p>conomic <p style={{color:'#10B981'}}>Lu</p>nch <p style={{color:'#10B981'}}>F</p>ood
         </ContainerTitleImagem>
       </BackgroundImage>
     </Layout>

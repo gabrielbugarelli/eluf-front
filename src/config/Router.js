@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Switch  } from 'react-router-dom'
-import Home from "../pages/home/home";
-import Cause from '../pages/cause/cause'
+import Home from "../pages/home/Home";
+import Cause from '../pages/cause/Cause'
 
 const Router =  () => {
   return(

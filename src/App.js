@@ -2,7 +2,7 @@
 import Router from './config/Router'
 
 // components
-import Home from './pages/home/home'
+import Home from './pages/home/Home'
 
 const App = () => {
   return (
