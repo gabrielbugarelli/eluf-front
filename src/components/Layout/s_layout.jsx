@@ -10,7 +10,6 @@ export const Container = tw.div`
 export const Context = tw.div`
   flex
   flex-col
-  mb-20
 
   // md
   md:ml-16
