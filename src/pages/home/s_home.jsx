@@ -59,6 +59,12 @@ export const ContainerItem = tw.div`
   mt-3
   
   // md
+  md:grid-cols-2
+  md:mb-5
+  md:gap-7
+
+  // lg
+  lg:grid-cols-3
   
 `;
 

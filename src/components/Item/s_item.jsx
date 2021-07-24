@@ -5,8 +5,22 @@ export const Container = tw.div`
   flex
   h-auto
   flex-col
-  bg-green-100
+  bg-green-50
   rounded-lg
+  shadow-md
+  w-full
+  
+  // md
+  md:flex-row
+  md:h-36
+  md:items-center
+  md:justify-center
+  md:pl-2
+  md:max-w-full
+  md:relative
+
+  // lg
+  
 `;
   
   export const ContainerItem = tw.div`
@@ -14,13 +28,30 @@ export const Container = tw.div`
   w-full
   pr-3
   pl-3
-  mb-4
+  pb-3
+  
+  // md
+  md:h-4/5
+  md:w-full
+  md:max-w-full
+  md:flex
+  md:flex-col
+  
 `;
 
 export const ImageItem = tw.img`
   w-full
   h-auto
   rounded-3xl
+  
+  // md
+  md:w-2/4
+  md:h-4/5
+  md:ml-2
+  
+
+  // lg
+  lg:w-2/3
 `;
 
 
@@ -29,16 +60,37 @@ export const HeaderItem = tw.div`
   justify-between
   items-center
   mt-2
+  flex-row
+  
+  // md
+  md:flex
+  md:flex-col
+  md:items-stretch
+  md:w-44
+  
+  md:pr-2
+  md:mt-0
+
+  // lg
+  lg:w-40
+  lg:pr-2
+  
 `;
 
+
 export const TitleItem = tw.p`
+  overflow-hidden
+  whitespace-nowrap
+  overflow-ellipsis
+  pr-5
   text-green-500
-  text-center
   text-2xl
+  md:text-xl
 `;
 export const PriceItem = tw.p`
   text-lg
   text-red-600
+  whitespace-nowrap
 `;
 
 export const DescriptionItem = styled.div`
@@ -48,4 +100,11 @@ export const DescriptionItem = styled.div`
   -webkit-line-clamp: 3; 
   -webkit-box-orient: vertical;
   color: #4B5563 ;
+  @media(min-width:768px){
+    width: 85%;
+    max-width: 85%;
+    -webkit-line-clamp: 2; 
+    
+    
+  }
 `;
