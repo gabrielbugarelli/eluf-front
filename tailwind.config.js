@@ -16,6 +16,7 @@ module.exports = {
         'span-10': 'span 10 / span 10',
         'span-11': 'span 11 / span 11',
         'span-12': 'span 12 / span 12',
+        'span-14': 'span 14/ span 14',
       },
       gridRowStart: {
         '8': '8',
@@ -24,6 +25,7 @@ module.exports = {
         '11': '11',
         '12': '12',
         '13': '13',
+        '14': '14',
       }
     },
   },

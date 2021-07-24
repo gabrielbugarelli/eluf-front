@@ -2,11 +2,17 @@
 import { Link } from 'react-router-dom';
 
 // components
+import { Container, Context } from './s_layout';
+import Menu from '../Menu/Menu'
+
 const Layout = ({children}) => {
   return (
-    <div>
-      {children}
-    </div>
+    <Container>
+      <Context>
+        {children}
+      </Context>
+      <Menu />
+    </Container>
   );
 }
 
