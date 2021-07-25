@@ -15,7 +15,7 @@ const Router =  () => {
       <BrowserRouter>
         <Switch>
           <Route path='/' exact component={Home}/>
-          <Route path='/cart' exact render={(props) => <Cart {...props} />} />
+          <Route path='/cart' exact component={Cart} />
           <Route path='/localization' exact component={Localization} />
           <Route path='/conscience' exact component={Conscience} />
           {/* page routes User Profile*/}

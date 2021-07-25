@@ -7,10 +7,12 @@ import ModalHome from '../../components/ModalHome/ModalHome'
 
 const Item = ({data}) => {
   const [active, setActive] = useState(false); 
+  const [couter, setCouter] = useState(0);
+
   const handleOpen = () => {
     setActive(!active)
-    {console.log(active)}
   } 
+
   return (
     <>
       <Container onClick={handleOpen}>
@@ -24,8 +26,9 @@ const Item = ({data}) => {
         </ContainerItem>
       </Container>
       {active &&
-          <ModalHome data={data} state={active} setState={setActive}/> 
+          <ModalHome counter={couter} setCounter={setCouter} data={data} state={active} setState={setActive} /> 
       }
+      
     </> 
   );
 }

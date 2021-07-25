@@ -7,15 +7,14 @@ import { Container, ContainerModal, ImageModal, ContextModal, HeaderModal, Title
 import {AiOutlinePlus, AiOutlineMinus, AiOutlineClose}from "react-icons/ai";
 import Router from '../../config/Router';
 
-function ModalHome({data, state, setState}){
-  const [couter, setCouter] = useState(0);
+function ModalHome({counter, setCounter, data, state, setState}){
   
   const hadleMoreCouter = () =>(
-    setCouter(couter+1)
-  )
+    setCounter(counter+1)
+   )
   const handleLessCouter = () => {
-    if (couter>0) {
-      setCouter(couter-1)
+    if (counter>0) {
+      setCounter(counter-1)
     }
   }
 
@@ -46,20 +45,15 @@ function ModalHome({data, state, setState}){
                 <AiOutlineMinus style={{color:'black'}}
                   onClick={handleLessCouter}
                   />
-                  {couter}
+                  {counter}
                 <AiOutlinePlus style={{color:'black'}}
                   onClick={hadleMoreCouter} />
               </CouterModal>
-              <ButtonModal><Link to={{
-                pathname:'/cart',
-                state:{
-                  data:data,
-                  counter:couter
-                }
-              }}>Add</Link></ButtonModal>
+              <ButtonModal>Add</ButtonModal>
             
           </ContextModal>
         </ContainerModal>
+       
         
       </Container>
     
