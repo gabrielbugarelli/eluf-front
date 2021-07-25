@@ -24,7 +24,7 @@ export const Container = tw.div`
 `;
 export const ContainerModal = tw.div`
   w-4/5
-  h-3/4  
+  h-auto
 
   bg-green-50
   rounded-3xl
@@ -40,7 +40,7 @@ export const ContainerModal = tw.div`
   md:w-3/5
 
   //xl
-  xl:w-
+  xl:w-2/5
 
   
 `;
@@ -103,10 +103,11 @@ export const CouterModal = tw.div`
 export const ButtonModal = tw.button`
   mt-3
   bg-green-500
-  w-2/4
-  h-1/6
+  w-1/4
   rounded-lg
   text-white
+  h-2/5
+  text-2xl
 
   // md
   md:min-h-2/6
