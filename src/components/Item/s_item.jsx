@@ -42,7 +42,7 @@ export const Container = tw.div`
 export const ImageItem = tw.img`
   w-full
   h-auto
-  rounded-3xl
+  rounded-t-3xl
   
   // md
   md:w-2/4

@@ -37,6 +37,7 @@ export const ContainerTitleImagem = tw.div`
   justify-center
   items-center
   text-white
+  
 `;
 
 export const HeaderItem = tw.div`

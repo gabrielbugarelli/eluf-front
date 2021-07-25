@@ -27,7 +27,9 @@ const Home = () => {
       <BackgroundImage>
         <ImageHome src={Imagem} />
         <ContainerTitleImagem>
-        <p style={{color:'#10B981'}}>E</p>conomic <p style={{color:'#10B981'}}>Lu</p>nch <p style={{color:'#10B981'}}>F</p>ood
+          <div style={{width:'100%', backgroundColor:'#6EE7B7', display:'flex', justifyContent:'center', opacity:'0.7'}}>
+            <p style={{color:'#10B981'}}>E</p>conomic <p style={{color:'#10B981'}}>Lu</p>nch <p style={{color:'#10B981'}}>F</p>ood
+          </div>
         </ContainerTitleImagem>
       </BackgroundImage>
       <ContextHome>
