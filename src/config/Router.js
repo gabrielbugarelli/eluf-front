@@ -5,6 +5,7 @@ import UserData from '../components/UserData/UserData';
 import UserDataLocation from '../components/UserDataLocation/UserDataLocation';
 import cause from '../pages/cause/Cause';
 import Localization from '../pages/localization/Localization';
+import Conscience from '../pages/conscience/Conscience';
 
 const Router =  () => {
   return(
@@ -14,6 +15,7 @@ const Router =  () => {
           <Route path='/' exact component={Home}/>
 
           <Route path='/localization' exact component={Localization} />
+          <Route path='/conscience' exact component={Conscience} />
 
           {/* page routes User Profile*/}
           <Route path='/user' exact component={User} />

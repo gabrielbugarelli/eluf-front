@@ -8,11 +8,10 @@ import { AiFillHome, AiOutlineShoppingCart,
 from "react-icons/ai";
 import { FaUserAlt, FaShoppingCart} from "react-icons/fa";
 
-
 const Menu = () => {
   return (
     <Container>
-      <Link to='/cause'>
+      <Link to='/conscience'>
         <ContainerIcon>
           <AiFillSmile style={{fontSize:'30px', color:'white'}}/>
         </ContainerIcon>
