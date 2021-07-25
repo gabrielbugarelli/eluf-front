@@ -10,11 +10,12 @@ const UserData = () => {
     <Layout>
       <Container>
         <Forms>
-            <TitleData name='Meus Dados'/>
-            <Input type="text" disabled placeholder="Nome do Usuário" />
+            <TitleData name='My data'/>
+            <Input type="text" disabled placeholder="username" />
             <Input type="text" disabled placeholder="CPF" />
-            <Input type="email" disabled placeholder="Email do Usuário" />
-            <Input type="number" disabled placeholder="Número de contato" />
+            <Input type="email" disabled placeholder="email" />
+            <Input type="number" disabled placeholder="contact number
+" />
             <Button disabled>Edit</Button>
         </Forms>
       </Container>

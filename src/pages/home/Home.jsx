@@ -11,16 +11,16 @@ const Home = () => {
   const [item, setItem] = useState([
     {name:'Kibe', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00',
     description:
-    'Extremamente Saboroso Extremamente Saboroso lore f aklf js dfjlk ajsdkfl jaskdjflkajs dfk jaksdjf alkjdsflk ajskdlfjaks dfkla sjdfkjas dkfjasdf lasdjf aksjdfkasdjfk asjdkfja ksdfj aks dfjka sjdfklsjad fkjasd kfjasdk fjakds jfklsaj dfkas djf as fjas df jfas kdfa sdkf jakls djfkas fjksadfklj asdfk aks fkas djfkajs df asdf as df asjdfak sjdfk  lskajd klsafdjk ajks fka sdfj as faks dfj'},
-    {name:'Lanch', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso quentinho para o consumo gostoso e quentinho para o consumo quentinho para o consumo gostoso e quentinho para o consumoquentinho para o consumo gostoso e quentinho para o consumo'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
-    {name:'Lanche', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Muito gostoso'},
+    'Extremely Tasty lore Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'},
+    {name:'Lanch', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Very delicious, warm for consumption, warm for consumption, warm for consumption, warm for consumption, warm for consumption, tasty and warm for consumption'},
+    {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Extremely Tasty'},
+    {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Extremely Tasty'},
+    {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Extremely Tasty'},
+    {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Extremely Tasty'},
+    {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Extremely Tasty'},
+    {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Extremely Tasty'},
+    {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Extremely Tasty'},
+    {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:'2.00', description:'Extremely Tasty'},
   ]);
   return (
     <Layout>

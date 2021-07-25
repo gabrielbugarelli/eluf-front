@@ -10,26 +10,26 @@ const cause = () => {
     <Layout>
       <Container>
         <section>
-          <Title>Causa do Projeto</Title>
+          <Title>Project Cause</Title>
         </section>
 
         <Context>
-          <p style={{textIndent:'30px'}}>Você Sabia que cerca de 17% dos alimentos disponíveis no mundo acabam sendo jogados no lixo?</p>
+          <p style={{textIndent:'30px'}}>Did you know that about 17% of the food available in the world ends up being thrown away?</p>
 
-          <p style={{textIndent:'30px'}}>Segundo a ONU, estima-se que entre 8% e 10% das emissões globais de gases de efeito estufa estão associadas a alimentos que não são consumidos.</p>
+          <p style={{textIndent:'30px'}}>According to the UN, it is estimated that between 8% and 10% of global greenhouse gas emissions are associated with food that is not consumed.</p>
 
-          <p style={{textIndent:'30px'}}>A plataforma Eluf veio para contribuir, melhorando a alimentação em muitas mesas e para ajudar na redução do desperdício de alimentos. </p>  
+          <p style={{textIndent:'30px'}}>The Eluf platform came to contribute, improving food on many tables and helping to reduce food waste.</p>  
 
-          <p style={{textIndent:'30px'}}>Além de diminuir perdas, a plataforma trás uma simples forma de comercialização. Ela serve para o pequeno produtor, para o comercio e para todos aqueles que desejam comercializar de forma fácil e consciente.</p>
+          <p style={{textIndent:'30px'}}>In addition to reducing losses, the platform brings a simple form of trading. It serves the small producer, the trade and all those who want to trade easily and consciously.</p>
 
-          <p style={{textIndent:'30px'}}>Funciona dessa maneira, a pessoa abre o aplicativo na pagina home, na qual vai estar listada os produtos, pagina que carrinho onde estara todos os alimentos selecionados, pagina maps vai simular a experiência do usuário, tera a pagina do usuario onde armazenara seus dados </p>
+          <p style={{textIndent:'30px'}}>
+          It works this way, the person opens the application on the home page, where the products will be listed, the cart page where all the selected foods will be, the maps page will simulate the user experience, there will be the user's page where they will store their data</p>
 
-          <p style={{textIndent:'30px'}}>A Eluf, além de ser uma plataforma simples e intuitiva ela chega no mercado para reduzir o desperdício, a fome e ajudar
-            a promover um mundo mais sustentável, nos tornando pessoas mais conscientes, se alinhando com os objetivos de desenvolvimento sustentável(ODS) que faz parte da plataforma agenda 2030.</p>
+          <p style={{textIndent:'30px'}}>Eluf, in addition to being a simple and intuitive platform, arrives on the market to reduce waste, hunger and help to promote a more sustainable world, making us more aware people, aligning with the sustainable development goals (SDGs) that are part of the 2030 agenda platform.</p>
         </Context>
 
         <Interaction>
-          Essa informação foi útil?
+          Was this information helpful?
           <Icons>
               <AiFillLike 
                 className="hover:text-green-500" 

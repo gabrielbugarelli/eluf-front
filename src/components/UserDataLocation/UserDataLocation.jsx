@@ -12,16 +12,16 @@ const UserDataLocation = () => {
   const [endereco, setEndereco] = useState(
     [
       {
-        address: 'Endereço 1',
-        road: 'Rua Sãp Benedito',
+        address: 'Address 1',
+        road: 'Road São Benedito',
         district: 'CPA',
         city: 'Cuiabá',
         state: 'MT',
         cep: 12345678
       },
       {
-        address: 'Endereço 2',
-        road: 'Rua Sãp Benedito',
+        address: 'Address 2',
+        road: 'Road São Benedito',
         district: 'CPA',
         city: 'Cuiabá',
         state: 'MT',

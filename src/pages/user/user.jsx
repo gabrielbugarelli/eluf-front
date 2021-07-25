@@ -27,7 +27,7 @@ const User = () => {
             <AiFillFileText className='text-xl text-gray-500'/>
           </UserDataIcon>
           <UserDataDescription>
-            Meus Dados
+            My data
           </UserDataDescription>
         </UserDataContainer>
       </Link>
@@ -38,7 +38,7 @@ const User = () => {
             <AiTwotoneEnvironment className='text-xl text-gray-500'/>
           </UserDataIcon>
           <UserDataDescription>
-            Endereços
+            My Adresses
           </UserDataDescription>
         </UserDataContainer>
       </Link>
@@ -49,7 +49,7 @@ const User = () => {
             <AiFillSmile className='text-xl text-gray-500'/>
           </UserDataIcon>
           <UserDataDescription>
-            Causa do Projeto
+            Project Cause
           </UserDataDescription>
         </UserDataContainer>
       </Link>
