@@ -26,7 +26,7 @@ const Item = ({data}) => {
         </ContainerItem>
       </Container>
       {active &&
-          <ModalHome counter={couter} setCounter={setCouter} data={data} state={active} setState={setActive} /> 
+        <ModalHome counter={couter} setCounter={setCouter} data={data} state={active} setState={setActive} /> 
       }
       
     </> 

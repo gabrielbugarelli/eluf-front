@@ -26,7 +26,7 @@ function ModalHome({counter, setCounter, data, state, setState}){
  
   return (
       
-        <Container>
+      <Container>
         <ContainerModal>
           <ImageModal src={data.image}/>
           <ContainerImageModal onClick={handleClose}>

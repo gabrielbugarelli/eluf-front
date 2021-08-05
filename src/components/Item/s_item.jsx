@@ -5,9 +5,9 @@ export const Container = tw.div`
   flex
   h-auto
   flex-col
-  bg-green-50
+  bg-green-100
   rounded-lg
-  shadow-md
+  shadow-sm
   w-full
   
   // md
@@ -42,7 +42,7 @@ export const Container = tw.div`
 export const ImageItem = tw.img`
   w-full
   h-auto
-  rounded-t-3xl
+  rounded-2xl
   
   // md
   md:w-2/4
