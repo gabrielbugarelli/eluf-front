@@ -1,10 +1,13 @@
+// react and css
 import React from 'react';
+
+// components
 import Layout from '../../components/Layout/Layout';
 
 const Localization = () => {
   return (
     <Layout>
-      Map
+      <div>Página Localization</div>
     </Layout>
   );
 }

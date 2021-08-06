@@ -1,11 +1,17 @@
 // react
-import { Link } from 'react-router-dom';
 
 // components
 import { Container, Context } from './s_layout';
 import Menu from '../Menu/Menu'
+import { ReactElement } from 'react';
 
-const Layout = ({children}) => {
+
+interface Children {
+  children: ReactElement | ReactElement[]
+}
+
+
+const Layout = ({children}:Children) => {
   return (
     <Container>
       <Context>

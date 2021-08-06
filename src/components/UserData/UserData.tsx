@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 import TitleData from "../TitleData/TitleData";
 
 //styles
-import {Container,Forms, Input, Button} from './s_userData'
+import {Container,Forms, Input, Button} from './s_userdata'
 
 const UserData = () => {
   return (

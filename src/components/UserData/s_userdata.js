@@ -11,7 +11,6 @@ export const Forms = tw.form`
   flex-col
   items-center
   max-w-3xl
-
   //md
   md:w-full
   md:rounded

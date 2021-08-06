@@ -5,7 +5,7 @@ import { Container, Title, Context, Interaction, Icons } from './s_cause';
 //icons
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
 
-const cause = () => {
+const Cause = () => {
   return (
     <Layout>
       <Container>
@@ -45,4 +45,4 @@ const cause = () => {
   );
 }
 
-export default cause;
+export default Cause;

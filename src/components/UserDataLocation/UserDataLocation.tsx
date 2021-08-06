@@ -5,7 +5,7 @@ import Layout from "../Layout/Layout";
 import TitleData from "../TitleData/TitleData";
 
 //styles
-import {Container,Forms, Input, Button} from './s_userDataLocation'
+import {Container,Forms, Input, Button} from './s_userdatalocation'
 
 const UserDataLocation = () => {
 
@@ -41,7 +41,7 @@ const UserDataLocation = () => {
               <Input type="text" disabled placeholder={item.district} />
               <Input type="email" disabled placeholder={item.city} />
               <Input type="email" disabled placeholder={item.state} />
-              <Input type="number" disabled placeholder={item.cep} />
+              <Input type="number" disabled placeholder={`${item.cep}`} />
               <Button disabled>Edit</Button>
             </Forms>
           )

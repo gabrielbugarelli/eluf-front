@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Switch  } from 'react-router-dom'
-import Home from "../pages/home/Home";
+import Home from "../pages/home/home";
 import User from '../pages/user/user';
 import UserData from '../components/UserData/UserData';
 import UserDataLocation from '../components/UserDataLocation/UserDataLocation';
 import Cause from '../pages/cause/cause';
-import Localization from '../pages/localization/Localization';
-import Conscience from '../pages/conscience/Conscience';
-import Cart from '../pages/Cart/Cart'
+import Localization from '../pages/localization/localization';
+import Conscience from '../pages/conscience/conscience';
+import Cart from '../pages/cart/cart'
 
 const Router =  () => {
   

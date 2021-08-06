@@ -5,21 +5,29 @@ export const Container = tw.div`
   flex
   h-auto
   flex-col
-  bg-green-100
   rounded-lg
   shadow-sm
   w-full
+  bg-green-100
+  
   
   // md
   md:flex-row
   md:h-36
   md:items-center
   md:justify-center
+  md:pt-2
+  md:pb-2
   md:pl-2
+  md:pr-2
   md:max-w-full
   
 
   // lg
+  lg:pt-2
+  lg:pb-2
+  lg:pl-2
+  lg:pr-2
   
 `;
   
@@ -29,13 +37,23 @@ export const Container = tw.div`
   pr-3
   pl-3
   pb-3
+  pt-0
+  mt-0
+  
+  
   
   // md
-  md:h-4/5
-  md:w-full
+  md:h-full
+  md:w-2/4
   md:max-w-full
   md:flex
   md:flex-col
+  
+
+  lg:w-2/4
+  lg:flex
+  lg:flex-col
+  
   
 `;
 
@@ -46,12 +64,12 @@ export const ImageItem = tw.img`
   
   // md
   md:w-2/4
-  md:h-4/5
-  md:ml-2
+  md:h-full
+
   
 
   // lg
-  lg:w-2/3
+  lg:w-2/4
 `;
 
 
@@ -65,7 +83,7 @@ export const HeaderItem = tw.div`
   // md
   md:flex
   md:flex-col
-  md:items-stretch
+  md:items-start
   md:w-44
   
   md:pr-2
@@ -74,6 +92,8 @@ export const HeaderItem = tw.div`
   // lg
   lg:w-40
   lg:pr-2
+  lg:mt-0
+  lg:pt-0
   
 `;
 
@@ -100,11 +120,10 @@ export const DescriptionItem = styled.div`
   -webkit-line-clamp: 3; 
   -webkit-box-orient: vertical;
   color: #4B5563 ;
+  text-align: start;
   @media(min-width:768px){
-    width: 85%;
-    max-width: 85%;
+    /* width: 85%;
+    max-width: 85%; */
     -webkit-line-clamp: 2; 
-    
-    
   }
 `;

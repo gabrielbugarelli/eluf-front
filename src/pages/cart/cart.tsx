@@ -7,7 +7,8 @@ import Layout from '../../components/Layout/Layout';
 const Cart = () => {
   return (
     <Layout>
-      carrinho
+      <div>cart</div>     
+      <div>testeando</div>
     </Layout>
   );
 }
