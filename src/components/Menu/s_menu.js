@@ -13,7 +13,6 @@ pr-2
 pl-2
 justify-around
 
-//md
 md:flex
 md:left-0
 md:w-16
@@ -21,8 +20,8 @@ md:min-h-screen
 md:flex-col
 md:justify-center
 md:gap-16
-
 `;
+
 export const ContainerIcon = tw.div`
   flex
   flex-col
@@ -33,14 +32,8 @@ export const ContainerIcon = tw.div`
   rounded-lg
   hover:bg-green-600
   
-
-  // md
   md:h-14
   md:w-14
-  
-
-
-  
 `;
 
 export const NameIcon = tw.p`

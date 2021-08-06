@@ -4,7 +4,9 @@ import {useState, useEffect} from 'react'
 import {Link, BrowserRouter, Route, Switch} from 'react-router-dom'
 
 // components
-import { Container, ContainerModal, ImageModal, ContextModal, HeaderModal, TitleModal, DescriptionModal,InIcon, CouterModal, ButtonModal, ContainerImageModal} from "./s_modalhome";
+import { Container, ContainerModal, ImageModal, ContextModal, HeaderModal, TitleModal, 
+    DescriptionModal,InIcon, CouterModal, ButtonModal, ContainerImageModal, TitleInstructions,
+    InputInstrucions} from "./s_modalhome";
 import {AiOutlinePlus, AiOutlineMinus, AiOutlineClose}from "react-icons/ai";
 import Router from '../../config/Router';
 
@@ -20,6 +22,7 @@ interface DataModal {
 }
 
 const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) => {
+  const [instrution, setInstrution] = useState('');
   const handleMoreCouter = () =>{
     setCouter(couter+1)
   }
@@ -45,8 +48,9 @@ const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) =>
             <DescriptionModal>
               {dataModal.description}
             </DescriptionModal>
+            <TitleInstructions> Instruções especiais</TitleInstructions>
+            <InputInstrucions placeholder='Digite detalhes do seu pedido' value={instrution} onChange={(e) => setInstrution(e.target.value)}/>
           </HeaderModal>
-          
             <CouterModal>
               <InIcon>
                 <AiOutlineMinus style={{color:'black'}}

@@ -1,12 +1,11 @@
 import tw from 'tailwind-styled-components'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = tw.div`
   fixed
   flex
   items-center
   justify-center
-
   w-screen
   h-screen
   float-right
@@ -19,42 +18,54 @@ export const Container = tw.div`
   md:justify-center
   md:items-center
   md:pt-0
-
-
 `;
 export const ContainerModal = tw.div`
   w-4/5
   h-auto
-
   bg-white
   rounded-3xl
   shadow-2xl
   flex
   flex-col
-  pt-0
-  mt-0
   overflow-auto
+  mb-16
 
   // md
   md:fixed
   md:w-3/5
+  md:max-w-lg
 
   //xl
   xl:w-2/5
-
   
-`;
-
-export const ImageModal = tw.img`
+  
+  `;
+  
+  export const ImageModal = tw.img`
   w-full
-  h-72
+  h-52
   max-h-72
   mt-0
-
-  // copiado
+  
   // md
-  md:max-h-64
-`;
+  md:max-h-56
+
+  `;
+  export const ContainerImageModal = tw.div`
+    rounded-2xl
+    p-1
+    mt-2
+    ml-2
+    w-auto
+    h-auto
+    absolute
+    text-3xl
+    align-end
+    text-green-500
+    bg-white
+    duration-1000
+    
+  `;
 
 export const ContextModal = tw.div`
   flex-1
@@ -88,15 +99,40 @@ export const HeaderModal = tw.div`
   md:text-4xl
   `;
   
-export const CouterModal = tw.div`
-  w-full
+  
+  export const TitleInstructions = tw.div`
+  text-green-500
+  text-xl
+  mt-2
+  mb-2
   flex
-  items-center
-  mt-auto
-  justify-center
-  text-3xl
-  text-green-400
-`;
+  font-normal
+  justify-start
+  
+  // md
+  md:text-2xl
+  
+  `;
+  
+  export const InputInstrucions = tw.input`
+  border-b-2
+  w-full
+  border-green-300
+  outline-none
+  text-gray-500
+
+  `;
+
+  export const CouterModal = tw.div`
+    w-full
+    flex
+    items-center
+    mt-6
+    justify-center
+    text-3xl
+    text-green-400
+  `;
+
 
 export const InIcon = tw.div`
   w-auto
@@ -113,28 +149,12 @@ export const ButtonModal = tw.button`
   w-1/4
   rounded-lg
   text-white
-  h-2/5
   text-2xl
 
   // md
   md:min-h-2/6
 `;
 
-export const ContainerImageModal = tw.div`
-  rounded-2xl
-  p-1
-  mt-1
-  ml-1
-  w-auto
-  h-auto
-  absolute
-  text-3xl
-  float-right
-  text-green-500
-  bg-green-50
-  duration-1000
-  
-`;
 
 export const DescriptionModal = styled.div`
   font-size: 17px;
@@ -144,20 +164,19 @@ export const DescriptionModal = styled.div`
   -webkit-line-clamp: 5; 
   -webkit-box-orient: vertical;
   color: #4B5563 ;
-  background-color: #E5E7EB;
+  background-color: #F3F4F6;
   text-align: start;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 5px;
+  min-height: 150px;
   @media(min-width:768px){
     /* width: 85%;
     max-width: 85%; */
     -webkit-line-clamp: 4; 
     font-size: 20px;
-    
-    
   }
 `;
 

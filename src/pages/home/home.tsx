@@ -10,6 +10,7 @@ import Item from '../../components/Item/Item'
 import Imagem from '../../images/imagemHome.jpg'
 import TitleData from '../../components/TitleData/TitleData';
 
+
 export interface InData{
   name: string,
   image:string,
@@ -20,9 +21,9 @@ export interface InData{
 const Home = () => {
   // [InData]
   const [item, setItem] = useState([
-    {name:'Kibe', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:2.00,
+    {name:'Prato feito', image:'https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', price:12.00,
     description:
-    'Quentinho macio e muito em conta lorem lorelkfjasdk f kjf akl jdfklj ka sdjfk asjdf kaj dfka sd fkla sfdkja skdjfa ksjf kajsd fkas jdf  fjaks dkf fkaj sdfk ajsdkf ajsk jdfk ajsdkf jaks jdkfj aks jdfkja skd fjkasj dfkajsd kfjaskd jfkasjdfkj askdjf kajs dkfj askdfk ajsk jfkajsdf fkjasdkj k jak sdfkaj sdk jak dsjfk ajsk kajs kdfja kj akf sdjkf '},
+    'Arroz branco, batata frita e picanha assada.'},
     {name:'Lanch', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:2.00, description:'Very delicious, warm for consumption, warm for consumption, warm for consumption, warm for consumption, warm for consumption, tasty and warm for consumption'},
     {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:2.00, description:'Extremely Tasty'},
     {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:2.00, description:'Extremely Tasty'},
@@ -48,6 +49,7 @@ const Home = () => {
           <TitleData name='Product'/>
           {/* <ButtonCategory /> */}
         </HeaderItem>
+        <div></div>
         <ContainerItem>
           {item.map((item:InData, key:Key) =>(
             <Item key={key} dataItem={item} />

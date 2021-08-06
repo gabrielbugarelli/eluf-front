@@ -21,7 +21,6 @@ export const BackgroundImage = tw.div`
   rounded-b-xl
   relative
   
-
   // md
   md:hidden
 `;

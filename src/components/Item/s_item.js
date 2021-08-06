@@ -5,11 +5,10 @@ export const Container = tw.div`
   flex
   h-auto
   flex-col
-  rounded-lg
+  rounded-2xl
   shadow-sm
   w-full
   bg-green-100
-  
   
   // md
   md:flex-row
@@ -21,13 +20,16 @@ export const Container = tw.div`
   md:pl-2
   md:pr-2
   md:max-w-full
-  
+
 
   // lg
   lg:pt-2
   lg:pb-2
   lg:pl-2
   lg:pr-2
+
+
+
   
 `;
   
@@ -40,8 +42,6 @@ export const Container = tw.div`
   pt-0
   mt-0
   
-  
-  
   // md
   md:h-full
   md:w-2/4
@@ -49,7 +49,6 @@ export const Container = tw.div`
   md:flex
   md:flex-col
   
-
   lg:w-2/4
   lg:flex
   lg:flex-col
@@ -60,13 +59,13 @@ export const Container = tw.div`
 export const ImageItem = tw.img`
   w-full
   h-auto
-  rounded-2xl
+  max-h-72
+  rounded-t-2xl
   
   // md
   md:w-2/4
   md:h-full
-
-  
+  md:rounded-2xl
 
   // lg
   lg:w-2/4
@@ -85,16 +84,14 @@ export const HeaderItem = tw.div`
   md:flex-col
   md:items-start
   md:w-44
-  
   md:pr-2
   md:mt-0
-
+  
   // lg
   lg:w-40
   lg:pr-2
   lg:mt-0
   lg:pt-0
-  
 `;
 
 
@@ -113,6 +110,22 @@ export const PriceItem = tw.p`
   whitespace-nowrap
 `;
 
+export const ContainerModal = tw.div`
+fixed
+flex
+items-center
+justify-center
+w-screen
+h-screen
+float-right
+top-0
+left-0
+bg-black
+opacity-50
+`;
+
+
+
 export const DescriptionItem = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
@@ -122,8 +135,6 @@ export const DescriptionItem = styled.div`
   color: #4B5563 ;
   text-align: start;
   @media(min-width:768px){
-    /* width: 85%;
-    max-width: 85%; */
     -webkit-line-clamp: 2; 
   }
 `;

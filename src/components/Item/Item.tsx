@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 
 // components
-import {Container, ImageItem, TitleItem, DescriptionItem, ContainerItem, PriceItem, HeaderItem} from './s_item'
+import {Container, ImageItem, TitleItem, DescriptionItem, ContainerItem, PriceItem, HeaderItem, ContainerModal} from './s_item'
 import ModalHome from '../../components/ModalHome/ModalHome'
 
 //interface 
@@ -12,13 +12,14 @@ interface DataItem{
   dataItem:InData
 }
 
-
-
 const Item = ({dataItem}:DataItem) => {
   const [active, setActive] = useState(false); 
   const [couter, setCouter] = useState(0);
 
   const handleOpen = () => {
+    setActive(!active)
+  }
+  const handleClose = () => {
     setActive(!active)
   }
 
@@ -35,9 +36,12 @@ const Item = ({dataItem}:DataItem) => {
         </ContainerItem>
       </Container>
       {active &&
-        <ModalHome couter={couter} setCouter={setCouter}
-          dataModal={dataItem} state={active} setState={setActive}
-        />
+        <>
+          <ContainerModal onClick={handleClose}/>
+          <ModalHome couter={couter} setCouter={setCouter}
+            dataModal={dataItem} state={active} setState={setActive}
+          />
+        </>
       } 
     </>
   );

@@ -11,10 +11,8 @@ export const Context = tw.div`
   flex
   flex-col
 
-  // md
   md:ml-16
   md:mb-0
-  
 `;
 
 export const LastWord = tw.div`
