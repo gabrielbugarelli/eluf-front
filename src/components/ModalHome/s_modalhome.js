@@ -34,6 +34,7 @@ export const ContainerModal = tw.div`
   md:fixed
   md:w-3/5
   md:max-w-lg
+  md:mb-0
 
   //xl
   xl:w-2/5
