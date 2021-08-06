@@ -26,7 +26,7 @@ export const ContainerModal = tw.div`
   w-4/5
   h-auto
 
-  bg-green-50
+  bg-white
   rounded-3xl
   shadow-2xl
   flex
@@ -49,7 +49,6 @@ export const ImageModal = tw.img`
   w-full
   h-72
   max-h-72
-  
   mt-0
 
   // copiado
@@ -67,7 +66,7 @@ export const ContextModal = tw.div`
   flex-col
 
   //md
-  md:pl-6
+  
   
 `;
 
@@ -81,12 +80,12 @@ export const HeaderModal = tw.div`
   overflow-hidden
   whitespace-nowrap
   overflow-ellipsis
-  pr-5
   text-green-500
-  text-2xl
-  
+  text-3xl
+  mb-2
+  font-medium
   // md
-  md:text-3xl
+  md:text-4xl
   `;
   
 export const CouterModal = tw.div`
@@ -94,11 +93,19 @@ export const CouterModal = tw.div`
   flex
   items-center
   mt-auto
-  justify-around
+  justify-center
   text-3xl
   text-green-400
-
 `;
+
+export const InIcon = tw.div`
+  w-auto
+  h-auto
+  bg-gray-200
+  rounded-2xl
+  mr-3
+  ml-3
+`
 
 export const ButtonModal = tw.button`
   mt-3
@@ -134,12 +141,19 @@ export const DescriptionModal = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 5; 
   -webkit-box-orient: vertical;
   color: #4B5563 ;
+  background-color: #E5E7EB;
+  text-align: start;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
   @media(min-width:768px){
-    width: 85%;
-    max-width: 85%;
+    /* width: 85%;
+    max-width: 85%; */
     -webkit-line-clamp: 4; 
     font-size: 20px;
     

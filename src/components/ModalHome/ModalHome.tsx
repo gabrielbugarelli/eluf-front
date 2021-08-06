@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react'
 import {Link, BrowserRouter, Route, Switch} from 'react-router-dom'
 
 // components
-import { Container, ContainerModal, ImageModal, ContextModal, HeaderModal, TitleModal, DescriptionModal, CouterModal, ButtonModal, ContainerImageModal} from "./s_modalhome";
+import { Container, ContainerModal, ImageModal, ContextModal, HeaderModal, TitleModal, DescriptionModal,InIcon, CouterModal, ButtonModal, ContainerImageModal} from "./s_modalhome";
 import {AiOutlinePlus, AiOutlineMinus, AiOutlineClose}from "react-icons/ai";
 import Router from '../../config/Router';
 
@@ -48,12 +48,16 @@ const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) =>
           </HeaderModal>
           
             <CouterModal>
-              <AiOutlineMinus style={{color:'black'}}
+              <InIcon>
+                <AiOutlineMinus style={{color:'black'}}
                 onClick={handleLessCouter}
                 />
+              </InIcon>
                 {couter}
-              <AiOutlinePlus style={{color:'black'}}
-                onClick={handleMoreCouter} />
+              <InIcon>
+                <AiOutlinePlus style={{color:'black'}}
+                  onClick={handleMoreCouter} />
+              </InIcon>
             </CouterModal>
             <ButtonModal>Add</ButtonModal>
         </ContextModal>
