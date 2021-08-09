@@ -5,6 +5,7 @@ import React,{Key, useState} from 'react';
 import Layout from '../../components/Layout/Layout'
 import {ContainerItem, ContextHome, ImageHome, BackgroundImage, ContainerTitleImagem, HeaderItem, TitlePage} from './s_home'
 import Item from '../../components/Item/Item'
+import ButtonCategory from '../../components/ButtonCategory/ButtonCategory'
 
 // image
 import Imagem from '../../images/imagemHome.jpg'
@@ -47,7 +48,7 @@ const Home = () => {
       <ContextHome>
         <HeaderItem>
           <TitleData name='Product'/>
-          {/* <ButtonCategory /> */}
+          <ButtonCategory />
         </HeaderItem>
         <div></div>
         <ContainerItem>

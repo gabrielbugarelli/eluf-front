@@ -57,7 +57,7 @@ const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) =>
                 onClick={handleLessCouter}
                 />
               </InIcon>
-                {couter}
+                {couter} 
               <InIcon>
                 <AiOutlinePlus style={{color:'black'}}
                   onClick={handleMoreCouter} />
