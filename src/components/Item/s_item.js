@@ -8,7 +8,7 @@ export const Container = tw.div`
   rounded-2xl
   shadow-sm
   w-full
-  bg-green-100
+  bg-green-50
   
   // md
   md:flex-row

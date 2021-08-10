@@ -1,7 +1,7 @@
 import tw from "tailwind-styled-components/dist/tailwind";
 
 export const Title = tw.header`
-  text-gray-600
+  text-green-500
   font-bold
   text-xl
   md:text-2xl

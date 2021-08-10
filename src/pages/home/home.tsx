@@ -19,6 +19,15 @@ export interface InData{
   description:string
 }
 
+export interface ArrayCategory{
+  data:InCategory[]
+}
+
+export interface InCategory{
+  id:number, 
+  name:string
+}
+
 const Home = () => {
   // [InData]
   const [item, setItem] = useState([
@@ -35,6 +44,11 @@ const Home = () => {
     {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:2.00, description:'Extremely Tasty'},
     {name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:2.00, description:'Extremely Tasty'},
   ]);
+  const [category, setCategory] = useState([
+    {id:1, name:"vegetal"},
+    {id:2, name: "frutas"},
+    {id:3, name: 'Alimentos'}
+  ]);
   return (
     <Layout>
       <BackgroundImage>
@@ -48,7 +62,7 @@ const Home = () => {
       <ContextHome>
         <HeaderItem>
           <TitleData name='Product'/>
-          <ButtonCategory />
+          <ButtonCategory data={category} />
         </HeaderItem>
         <div></div>
         <ContainerItem>
