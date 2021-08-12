@@ -2,7 +2,7 @@
 import {useState} from 'react'
 
 // components
-import {Container, ContainerButton, ContextButton} from './s_buttoncategory'
+import {Container, ContainerButton, ContextButton, ItemButton} from './s_buttoncategory'
 import { ArrayCategory } from '../../pages/home/home';
 
 const ButtonCategory = ({data}:ArrayCategory) => {
@@ -13,11 +13,14 @@ const ButtonCategory = ({data}:ArrayCategory) => {
       <ContainerButton onClick={() => setActive(!active)}>
         Category
       </ContainerButton>
-      {/* {active&& */}
+      {active&&
         <ContextButton>
-          Testando
+          {data.map((item,key)=>(
+            <ItemButton>{item.name}</ItemButton>
+          ))}
+          <ItemButton>Todos tipos</ItemButton>
         </ContextButton>
-      {/* } */}
+      }
     </Container>
   );
 }

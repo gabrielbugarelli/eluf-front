@@ -11,7 +11,7 @@ export const ContainerButton = tw.button`
   bg-green-500
   text-white
   font-bold
-  rounded-t-lg
+  rounded-sm
   text-lg
   w-32
   h-8
@@ -20,27 +20,16 @@ export const ContainerButton = tw.button`
 export const ContextButton = tw.div`
   w-32
   h-auto
-  bg-green-100
+  bg-green-400
   absolute
   mt-8
-  
+  rounded-sm
+`;
+export const ItemButton = tw.div`
+  w-full
+  h-auto
+  border-b-2
+  border-green-500
+  text-white
   
 `;
-
-// export const ContextButton = styled.div`
-//     width: 100%;
-//     height: auto;
-//     max-height: 20vh;
-//     position: absolute;
-//     border-radius: 15px;
-//     background-color: white;
-//     overflow-y: auto;
-//     ::-webkit-scrollbar{
-//         width: 6px;
-//         height: 6px;
-//     }
-//     ::-webkit-scrollbar-thumb{
-//         background-color: rgba(0, 0, 0, 0.2);;
-//     }
-
-// `; ${(active:boolean)=> active? 'rounded-t-lg' : 'rounded-lg' }
