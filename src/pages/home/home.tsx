@@ -16,7 +16,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/index';
 import { increment } from '../../store/test/test.store';
 
-
 export interface InData{
   name: string,
   image:string,
@@ -57,8 +56,7 @@ const Home = () => {
 
   const dispath = useDispatch()
   // exemplo selector
-  // const test = useSelector((state:RootState)=>state.test)
-
+  const test = useSelector( (state: RootState) => state.test)
   return (
     <Layout>
       <BackgroundImage>
@@ -81,6 +79,10 @@ const Home = () => {
           ))}
         </ContainerItem>
       </ContextHome>
+      <div>
+        {test.counter}
+        <button onClick={()=> dispath(increment())}>clique</button>
+      </div>
     </Layout>
   );
 }
