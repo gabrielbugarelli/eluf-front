@@ -11,6 +11,11 @@ import ButtonCategory from '../../components/ButtonCategory/ButtonCategory'
 import Imagem from '../../images/imagemHome.jpg'
 import TitleData from '../../components/TitleData/TitleData';
 
+// redux
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../store/index';
+import { increment } from '../../store/test/test.store';
+
 
 export interface InData{
   name: string,
@@ -49,6 +54,11 @@ const Home = () => {
     {id:2, name: "Frutas"},
     {id:3, name: 'Alimentos'}
   ]);
+
+  const dispath = useDispatch()
+  // exemplo selector
+  // const test = useSelector((state:RootState)=>state.test)
+
   return (
     <Layout>
       <BackgroundImage>

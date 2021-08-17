@@ -24,6 +24,10 @@ export const ContextButton = tw.div`
   absolute
   mt-8
   rounded-sm
+  cursor-pointer
+  // adicionar um transition 
+  // adicionar um hover
+  
 `;
 export const ItemButton = tw.div`
   w-full

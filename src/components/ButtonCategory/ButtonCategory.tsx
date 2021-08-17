@@ -18,7 +18,7 @@ const ButtonCategory = ({data}:ArrayCategory) => {
           {data.map((item,key)=>(
             <ItemButton>{item.name}</ItemButton>
           ))}
-          <ItemButton>Todos tipos</ItemButton>
+          <ItemButton>Todos os tipos</ItemButton>
         </ContextButton>
       }
     </Container>
