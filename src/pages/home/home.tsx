@@ -56,7 +56,7 @@ const Home = () => {
 
   const dispath = useDispatch()
   // exemplo selector
-  const test = useSelector( (state: RootState) => state.test)
+  // const test = useSelector( (state: RootState) => state.test)
   return (
     <Layout>
       <BackgroundImage>
@@ -79,10 +79,6 @@ const Home = () => {
           ))}
         </ContainerItem>
       </ContextHome>
-      <div>
-        {test.counter}
-        <button onClick={()=> dispath(increment())}>clique</button>
-      </div>
     </Layout>
   );
 }

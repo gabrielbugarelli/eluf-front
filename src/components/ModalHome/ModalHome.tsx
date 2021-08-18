@@ -12,6 +12,9 @@ import Router from '../../config/Router';
 
 // interface
 import { InData } from '../../pages/home/home';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../store';
+import { AddCart } from '../../store/CartStore/Cart.store';
 
 interface DataModal {
   couter:number,
@@ -20,6 +23,12 @@ interface DataModal {
   state:Boolean,
   setState:Function
 }
+
+export interface addCart {
+  dataModal:InData,
+  couter:number
+}
+
 
 const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) => {
   const [instrution, setInstrution] = useState('');
@@ -35,6 +44,19 @@ const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) =>
     setState(!state)
   }
 
+  const dispatch = useDispatch()
+  const cart = useSelector((state: RootState) => state.cart)
+
+  
+  const handleAddCart = () =>{
+    const dataCart= {
+      dataStore:{
+        dataModal:dataModal,
+        couter:couter
+      }
+    }
+    dispatch(AddCart(dataCart))
+  }
   return (
     <Container>
       <ContainerModal>
@@ -63,7 +85,7 @@ const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) =>
                   onClick={handleMoreCouter} />
               </InIcon>
             </CouterModal>
-            <ButtonModal>Add</ButtonModal>
+            <ButtonModal onClick={handleAddCart}>Add</ButtonModal>
         </ContextModal>
       </ContainerModal>
     </Container>
