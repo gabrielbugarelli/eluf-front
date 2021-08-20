@@ -2,6 +2,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import {Link, BrowserRouter, Route, Switch} from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
 
 // components
 import { Container, ContainerModal, ImageModal, ContextModal, HeaderModal, TitleModal, 
@@ -12,7 +13,8 @@ import Router from '../../config/Router';
 
 // interface
 import { InData } from '../../pages/home/home';
-import { useDispatch, useSelector } from 'react-redux';
+
+// store
 import { RootState } from '../../store';
 import { AddCart } from '../../store/CartStore/Cart.store';
 
@@ -24,10 +26,6 @@ interface DataModal {
   setState:Function
 }
 
-export interface addCart {
-  dataModal:InData,
-  couter:number
-}
 
 
 const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) => {
@@ -46,17 +44,15 @@ const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) =>
 
   const dispatch = useDispatch()
   const cart = useSelector((state: RootState) => state.cart)
-
   
   const handleAddCart = () =>{
     const dataCart= {
-      dataStore:{
-        dataModal:dataModal,
-        couter:couter
-      }
+      ...dataModal,
+      couter:couter  
     }
     dispatch(AddCart(dataCart))
   }
+  
   return (
     <Container>
       <ContainerModal>
@@ -85,7 +81,7 @@ const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) =>
                   onClick={handleMoreCouter} />
               </InIcon>
             </CouterModal>
-            <ButtonModal onClick={handleAddCart}>Add</ButtonModal>
+            <Link to='/cart'><ButtonModal onClick={handleAddCart}>Add</ButtonModal></Link>
         </ContextModal>
       </ContainerModal>
     </Container>

@@ -1,19 +1,24 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { addCart } from './../../components/ModalHome/ModalHome';
+import { createSlice, EmptyObject, PayloadAction } from "@reduxjs/toolkit";
 
 
-interface DataStore {
-  dataStore:addCart
+export interface DataStore {
+  id:number,
+  couter: number,
+  name: string,
+  image: string,
+  price: number,
+  description: string ,
+  category:string
 }
+
+type InitialState = DataStore[]
 
 const cart = createSlice({
   name: "cart",
-  initialState:{
-    data:[{}],
-  },
+  initialState: [] as InitialState,
   reducers: {
     AddCart(state, action: PayloadAction<DataStore>) {
-      state.data.push(action.payload.dataStore); 
+      state.push(action.payload);
     },
   },
 });
