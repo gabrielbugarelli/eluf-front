@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 
 // components
-import { Container, ContainerIcon, NameIcon } from './s_menu';
+import { Container, ContainerIcon, NameIcon } from './s_menushare';
 import { AiFillHome, AiOutlineShoppingCart,
   AiOutlineUser, AiFillSmile, AiTwotoneEnvironment }
 from "react-icons/ai";

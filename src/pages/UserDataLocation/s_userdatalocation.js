@@ -1,16 +1,11 @@
 import tw from "tailwind-styled-components";
 
-export const Container = tw.div`
-  md:flex
-  md:justify-center
-  md:mt-20
-`
-
 export const Forms = tw.form`
   flex
   flex-col
   items-center
-  max-w-3xl
+  w-full
+
   //md
   md:w-full
   md:rounded

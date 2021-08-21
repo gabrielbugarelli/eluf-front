@@ -2,19 +2,28 @@
 import React,{Key, useState} from 'react';
 
 // components
-import Layout from '../../components/Layout/Layout'
-import {ContainerItem, ContextHome, ImageHome, BackgroundImage, ContainerTitleImagem, HeaderItem, TitlePage} from './s_home'
-import Item from '../../components/Item/Item'
-import ButtonCategory from '../../components/ButtonCategory/ButtonCategory'
+import Item from '../../components/c_home/Item/Item'
+import ButtonCategory from '../../components/c_home/ButtonCategory/ButtonCategory'
+
+// styled-components
+import {
+  ContainerItem,
+  ContextHome,
+  ImageHome,
+  BackgroundImage,
+  ContainerTitleImagem,
+  HeaderItem,
+  TitlePage
+} from './s_home'
+
+// components-share
+import Layout from '../../componentsShare/LayoutShare/LayoutShare'
+import TitleShare from '../../componentsShare/TitleShare/TitleShare';
+import ContextShare from '../../componentsShare/ContentShare/ContentShare';
 
 // image
 import Imagem from '../../images/imagemHome.jpg'
-import TitleData from '../../components/TitleData/TitleData';
 
-// redux
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../store/index';
-import { increment } from '../../store/test/test.store';
 
 export interface InData{
   id:number,
@@ -56,9 +65,6 @@ const Home = () => {
     {id:3, name: 'Alimentos'}
   ]);
 
-  const dispath = useDispatch()
-  // exemplo selector
-  // const test = useSelector( (state: RootState) => state.test)
   return (
     <Layout>
       <BackgroundImage>
@@ -69,18 +75,17 @@ const Home = () => {
           </div>
         </ContainerTitleImagem>
       </BackgroundImage>
-      <ContextHome>
+      <ContextShare>
         <HeaderItem>
-          <TitleData name='Product'/>
+          <TitleShare name='Product'/>
           <ButtonCategory data={category} />
         </HeaderItem>
-        <div></div>
         <ContainerItem>
           {item.map((item:InData, key:Key) =>(
             <Item key={key} dataItem={item} />
           ))}
         </ContainerItem>
-      </ContextHome>
+      </ContextShare>
     </Layout>
   );
 }

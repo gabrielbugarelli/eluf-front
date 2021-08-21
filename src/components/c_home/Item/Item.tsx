@@ -3,10 +3,10 @@ import React, {useState} from 'react';
 
 // components
 import {Container, ImageItem, TitleItem, DescriptionItem, ContainerItem, PriceItem, HeaderItem, ContainerModal} from './s_item'
-import ModalHome from '../../components/ModalHome/ModalHome'
+import ModalHome from '../ModalHome/ModalHome'
 
 //interface 
-import { InData } from '../../pages/home/home';
+import { InData } from '../../../pages/home/home';
 
 interface DataItem{
   dataItem:InData

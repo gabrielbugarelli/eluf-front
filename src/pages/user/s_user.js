@@ -3,7 +3,6 @@ import tw from "tailwind-styled-components";
 export const UserContainer  = tw.div`
   flex
   items-center
-  m-4
   gap-5
   mb-8
 `;

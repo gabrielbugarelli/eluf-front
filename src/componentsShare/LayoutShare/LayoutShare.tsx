@@ -1,12 +1,12 @@
 // react
 
 // components
-import { Container, Context } from './s_layout';
-import Menu from '../Menu/Menu'
+import { Container, Context } from './s_layoutshare';
+import Menu from './MenuShare/MenuShare'
 import { ReactElement } from 'react';
 
 
-interface Children {
+export interface Children {
   children: ReactElement | ReactElement[]
 }
 

@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Switch  } from 'react-router-dom'
 import Home from "../pages/home/home";
 import User from '../pages/user/user';
-import UserData from '../components/UserData/UserData';
-import UserDataLocation from '../components/UserDataLocation/UserDataLocation';
+import UserData from '../pages/UserData/UserData';
+import UserDataLocation from '../pages/UserDataLocation/UserDataLocation';
 import Cause from '../pages/cause/cause';
 import Localization from '../pages/localization/localization';
 import Conscience from '../pages/conscience/conscience';

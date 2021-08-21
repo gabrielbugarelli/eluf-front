@@ -9,14 +9,14 @@ import { Container, ContainerModal, ImageModal, ContextModal, HeaderModal, Title
     DescriptionModal,InIcon, CouterModal, ButtonModal, ContainerImageModal, TitleInstructions,
     InputInstrucions} from "./s_modalhome";
 import {AiOutlinePlus, AiOutlineMinus, AiOutlineClose}from "react-icons/ai";
-import Router from '../../config/Router';
+import Router from '../../../config/Router';
 
 // interface
-import { InData } from '../../pages/home/home';
+import { InData } from '../../../pages/home/home';
 
 // store
-import { RootState } from '../../store';
-import { AddCart } from '../../store/CartStore/Cart.store';
+import { RootState } from '../../../store';
+import { AddCart } from '../../../store/CartStore/Cart.store';
 
 interface DataModal {
   couter:number,
@@ -25,8 +25,6 @@ interface DataModal {
   state:Boolean,
   setState:Function
 }
-
-
 
 const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) => {
   const [instrution, setInstrution] = useState('');

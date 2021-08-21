@@ -1,11 +1,14 @@
 import { useState } from "react";
 
 //components
-import Layout from "../Layout/Layout";
-import TitleData from "../TitleData/TitleData";
+import Layout from "../../componentsShare/LayoutShare/LayoutShare";
+import TitleShare from "../../componentsShare/TitleShare/TitleShare";
+
+// components-share
+import ContextShare from '../../componentsShare/ContentShare/ContentShare';
 
 //styles
-import {Container,Forms, Input, Button} from './s_userdatalocation'
+import {Forms, Input, Button} from './s_userdatalocation'
 
 const UserDataLocation = () => {
 
@@ -32,11 +35,11 @@ const UserDataLocation = () => {
 
   return (
     <Layout>
-      <Container>
+      <ContextShare>
         {endereco.map((item, index) =>{
           return(
             <Forms key={index}>
-              <TitleData name={item.address}/>
+              <TitleShare name={item.address}/>
               <Input type="text" disabled placeholder={item.road} />
               <Input type="text" disabled placeholder={item.district} />
               <Input type="email" disabled placeholder={item.city} />
@@ -46,7 +49,7 @@ const UserDataLocation = () => {
             </Forms>
           )
         })}
-      </Container>
+      </ContextShare>
     </Layout>
   );
 }

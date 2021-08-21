@@ -5,5 +5,4 @@ export const Title = tw.header`
   font-bold
   text-xl
   md:text-2xl
-  m-2
 `

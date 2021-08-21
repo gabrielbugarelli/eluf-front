@@ -5,8 +5,6 @@ export const Container = tw.div`
   flex-col
   items-center
   text-gray-500
-  mt-3
-  md:mt-8
 `;
 export const Title = tw.div`
   font-bold

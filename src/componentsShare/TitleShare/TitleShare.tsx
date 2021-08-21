@@ -1,4 +1,4 @@
-import {Title} from './s_titledata'
+import {Title} from './s_titleshare'
 
 interface Data {
   name:string

@@ -44,8 +44,6 @@ export const HeaderItem = tw.div`
   fle-col
   items-center
   justify-between
-  mt-1
-  
 `;
 
 export const TitlePage = tw.p`

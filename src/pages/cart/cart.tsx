@@ -3,11 +3,16 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Key } from 'react';
 
-// components
-import Layout from '../../components/Layout/Layout';
+// styled-components
+
+// components-cart
+
+// components share
+import TitleShare from '../../componentsShare/TitleShare/TitleShare';
+import ContextShare from '../../componentsShare/ContentShare/ContentShare';
+import Layout from '../../componentsShare/LayoutShare/LayoutShare';
 
 //interface
-
 import { DataStore } from '../../store/CartStore/Cart.store';
 
 // store
@@ -19,9 +24,15 @@ const Cart = () => {
   
   return (
     <Layout>
-      {cart.map((item:DataStore,key:Key)=>(
-        <h1 key={key}>{item.name}</h1>
-      ))}
+      <ContextShare>
+        <TitleShare name='Cart' />
+
+
+
+      {/* {cart.map((item:DataStore,key:Key)=>(
+        <h1 key={key}>{item.couter}</h1>
+      ))} */}
+      </ContextShare>
     </Layout>
   );
 }

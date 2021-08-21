@@ -2,11 +2,7 @@ import tw from "tailwind-styled-components";
 
 export const Container = tw.div`
   md:flex
-  md:flex-col
-  md:items-center
   md:justify-center
-  md:p-5
-  md:gap-5
 `
 
 export const Forms = tw.form`
@@ -14,7 +10,6 @@ export const Forms = tw.form`
   flex-col
   items-center
   max-w-3xl
-
   //md
   md:w-full
   md:rounded

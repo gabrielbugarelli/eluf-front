@@ -3,7 +3,7 @@ import {useState} from 'react'
 
 // components
 import {Container, ContainerButton, ContextButton, ItemButton} from './s_buttoncategory'
-import { ArrayCategory } from '../../pages/home/home';
+import { ArrayCategory } from '../../../pages/home/home';
 
 const ButtonCategory = ({data}:ArrayCategory) => {
   const [active, setActive] = useState<Boolean>(false);
