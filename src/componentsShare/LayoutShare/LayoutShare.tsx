@@ -1,7 +1,7 @@
 // react
 
 // components
-import { Container, Context } from './s_layoutshare';
+import { Container, Content } from './s_layoutshare';
 import Menu from './MenuShare/MenuShare'
 import { ReactElement } from 'react';
 
@@ -14,9 +14,9 @@ export interface Children {
 const Layout = ({children}:Children) => {
   return (
     <Container>
-      <Context>
+      <Content>
         {children}
-      </Context>
+      </Content>
       <Menu />
     </Container>
   );

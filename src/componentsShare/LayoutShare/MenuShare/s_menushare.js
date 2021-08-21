@@ -3,12 +3,11 @@ import tw from 'tailwind-styled-components'
 export const Container = tw.div`
 fixed
 flex
-bg-green-500
+bg-transparent
 bottom-0
 w-full
-h-20
+bg-green-500
 items-center
-gap-4
 pr-2
 pl-2
 justify-around

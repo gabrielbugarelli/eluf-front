@@ -1,9 +1,8 @@
 //components
-import Layout from '../../componentsShare/LayoutShare/LayoutShare';
 import { Container, Title, Context, Interaction, Icons } from './s_conscience';
 
 // components-share
-import ContextShare from '../../componentsShare/ContentShare/ContentShare';
+import Layout from '../../componentsShare/LayoutShare/LayoutShare';
 
 //icons
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
@@ -11,7 +10,6 @@ import { AiFillLike, AiFillDislike } from "react-icons/ai";
 const conscience = () => {
   return (
     <Layout>
-      <ContextShare>
         <Container>
           <section>
             <Title>5 tips for freezing and preserving food to avoid waste</Title>
@@ -57,7 +55,6 @@ const conscience = () => {
             </Icons>
           </Interaction>
         </Container>
-      </ContextShare>
     </Layout>
   );
 }

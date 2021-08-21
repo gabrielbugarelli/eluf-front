@@ -46,7 +46,8 @@ const ModalHome = ({dataModal, couter, setCouter, state, setState}:DataModal) =>
   const handleAddCart = () =>{
     const dataCart= {
       ...dataModal,
-      couter:couter  
+      couter:couter,
+      setCouter
     }
     dispatch(AddCart(dataCart))
   }

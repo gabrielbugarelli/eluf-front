@@ -1,9 +1,8 @@
 //components
-import Layout from '../../componentsShare/LayoutShare/LayoutShare';
 import { Container, Title, Context, Interaction, Icons } from './s_cause';
 
 // components-share
-import ContextShare from '../../componentsShare/ContentShare/ContentShare';
+import Layout from '../../componentsShare/LayoutShare/LayoutShare';
 
 //icons
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
@@ -11,7 +10,6 @@ import { AiFillLike, AiFillDislike } from "react-icons/ai";
 const Cause = () => {
   return (
     <Layout>
-      <ContextShare>
         <Container>
           <section>
             <Title>Project Cause</Title>
@@ -45,7 +43,6 @@ const Cause = () => {
             </Icons>
           </Interaction>
         </Container>
-      </ContextShare>
     </Layout>
   );
 }

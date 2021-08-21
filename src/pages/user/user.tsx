@@ -3,7 +3,6 @@ import Layout from '../../componentsShare/LayoutShare/LayoutShare';
 import { Link } from 'react-router-dom';
 
 // components-share
-import ContextShare from '../../componentsShare/ContentShare/ContentShare';
 
 //styles
 import {
@@ -23,7 +22,6 @@ import { BiGame } from "react-icons/bi";
 const User = () => {
   return (
     <Layout>
-      <ContextShare>
         <UserContainer>
           <Icon>
             <BiGame className='text-3xl'/>
@@ -65,7 +63,6 @@ const User = () => {
             </UserDataDescription>
           </UserDataContainer>
         </Link>
-      </ContextShare>
     </Layout>
   );
 }

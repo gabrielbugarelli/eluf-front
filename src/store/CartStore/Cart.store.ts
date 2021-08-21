@@ -1,4 +1,5 @@
 import { createSlice, EmptyObject, PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from '../index';
 
 
 export interface DataStore {
@@ -8,7 +9,8 @@ export interface DataStore {
   image: string,
   price: number,
   description: string ,
-  category:string
+  category:string,
+  setCouter:Function
 }
 
 type InitialState = DataStore[]

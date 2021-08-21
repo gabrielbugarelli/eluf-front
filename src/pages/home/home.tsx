@@ -19,7 +19,6 @@ import {
 // components-share
 import Layout from '../../componentsShare/LayoutShare/LayoutShare'
 import TitleShare from '../../componentsShare/TitleShare/TitleShare';
-import ContextShare from '../../componentsShare/ContentShare/ContentShare';
 
 // image
 import Imagem from '../../images/imagemHome.jpg'
@@ -46,9 +45,9 @@ export interface InCategory{
 const Home = () => {
   // [InData]
   const [item, setItem] = useState([
-    {id:1,name:'Prato feito', image:'https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', price:12.00,
+    {id:1,name:'Prato feito ', image:'https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', price:12.00,
     description:
-    'Arroz branco, batata frita e picanha assada.',category:'Alimento'},
+    'Arroz branco, batata frita e picanha assada',category:'Alimento'},
     {id:2,name:'Lanch', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:2.00, description:'Very delicious, warm for consumption, warm for consumption, warm for consumption, warm for consumption, warm for consumption, tasty and warm for consumption',category:'Alimento'},
     {id:3,name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:2.00, description:'Extremely Tasty',category:'Alimento'},
     {id:4,name:'Snack', image:'https://tribunademinas.com.br/wp-content/uploads/2021/07/bolinho-de-costela.jpg', price:2.00, description:'Extremely Tasty',category:'Alimento'},
@@ -66,7 +65,7 @@ const Home = () => {
   ]);
 
   return (
-    <Layout>
+    <>
       <BackgroundImage>
         <ImageHome src={Imagem} />
         <ContainerTitleImagem>
@@ -75,18 +74,18 @@ const Home = () => {
           </div>
         </ContainerTitleImagem>
       </BackgroundImage>
-      <ContextShare>
-        <HeaderItem>
-          <TitleShare name='Product'/>
-          <ButtonCategory data={category} />
-        </HeaderItem>
-        <ContainerItem>
-          {item.map((item:InData, key:Key) =>(
-            <Item key={key} dataItem={item} />
-          ))}
-        </ContainerItem>
-      </ContextShare>
-    </Layout>
+      <Layout>
+          <HeaderItem>
+            <TitleShare name='Product'/>
+            <ButtonCategory data={category} />
+          </HeaderItem>
+          <ContainerItem>
+            {item.map((item:InData, key:Key) =>(
+              <Item key={key} dataItem={item} />
+            ))}
+          </ContainerItem>
+      </Layout>
+    </>
   );
 }
 

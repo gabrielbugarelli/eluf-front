@@ -5,7 +5,6 @@ import Layout from "../../componentsShare/LayoutShare/LayoutShare";
 import TitleShare from "../../componentsShare/TitleShare/TitleShare";
 
 // components-share
-import ContextShare from '../../componentsShare/ContentShare/ContentShare';
 
 //styles
 import {Forms, Input, Button} from './s_userdatalocation'
@@ -35,7 +34,6 @@ const UserDataLocation = () => {
 
   return (
     <Layout>
-      <ContextShare>
         {endereco.map((item, index) =>{
           return(
             <Forms key={index}>
@@ -49,7 +47,6 @@ const UserDataLocation = () => {
             </Forms>
           )
         })}
-      </ContextShare>
     </Layout>
   );
 }

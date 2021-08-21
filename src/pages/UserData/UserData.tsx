@@ -3,7 +3,6 @@ import Layout from "../../componentsShare/LayoutShare/LayoutShare";
 import TitleData from "../../componentsShare/TitleShare/TitleShare";
 
 // components share
-import ContextShare from '../../componentsShare/ContentShare/ContentShare';
 
 //styles
 import {Container,Forms, Input, Button} from './s_userdata'
@@ -12,7 +11,6 @@ import {Container,Forms, Input, Button} from './s_userdata'
 const UserData = () => {
   return (
     <Layout>
-      <ContextShare>
         <Container>
           <Forms>
               <TitleData name='My data'/>
@@ -24,7 +22,6 @@ const UserData = () => {
               <Button disabled>Edit</Button>
           </Forms>
         </Container>
-      </ContextShare>
     </Layout>
   );
 }
